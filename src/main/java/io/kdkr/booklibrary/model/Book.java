@@ -7,17 +7,13 @@ import lombok.Setter;
 @Setter
 public class Book {
     private String id;
-    private BookDescription bookDescription;
-    private Author author;
-    private Publication publication;
+    private String name;
 
     public Book() {
     }
 
-    public Book(String id, BookDescription bookDescription, Author author, Publication publication) {
+    public Book(String id, String name) {
         this.id = id;
-        this.bookDescription = bookDescription;
-        this.author = author;
-        this.publication = publication;
+        this.name = name;
     }
 }
