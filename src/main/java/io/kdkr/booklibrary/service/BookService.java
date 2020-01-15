@@ -2,6 +2,7 @@ package io.kdkr.booklibrary.service;
 
 import io.kdkr.booklibrary.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -11,6 +12,8 @@ import java.util.stream.Collectors;
 
 @Service
 public class BookService {
+    @Value("${name}")
+    private String name;
 
     @Autowired
     private BookRepository bookRepository;
