@@ -15,8 +15,11 @@ public class BookService {
     @Value("${name}")
     private String name;
 
+//    @Autowired
+//    private BookRepository bookRepository;
+
     @Autowired
-    private BookRepository bookRepository;
+    private BookMongoRepo bookRepository;
 
     Book book1 = new Book("id1", "name1");
     Book book2 = new Book("id2", "name2");
