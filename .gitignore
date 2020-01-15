@@ -38,4 +38,6 @@ transaction-logs
 .flattened-pom.xml
 secrets.yml
 .gradletasknamecache
+derby.log
+mydb
 .sts4-cache
